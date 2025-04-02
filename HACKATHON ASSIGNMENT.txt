@@ -1,0 +1,46 @@
+x Expected '>', got 'className'
+    ,-[/dev-server/src/data/criteria.ts:10:1]
+  7 |     id: "creativity",
+  8 |     title: "Creativity and Ingenuity",
+  9 |     description: "Evaluates the originality of ideas and standout features that differentiate the project.",
+ 10 |     icon: <Sparkles className="h-5 w-5 text-hackathon-purple" />,
+    :                     ^^^^^^^^^
+ 11 |     checkpoints: [
+ 12 |       "Original concept that addresses a unique problem or need",
+ 13 |       "Innovative approach to solving the problem",
+    `----
+
+
+Caused by:
+    Syntax Error
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: _ZZN4node14ThreadPoolWork12ScheduleWorkEvENUlP9uv_work_sE_4_FUNES2_
+  15: worker
+             at /home/iojs/build/ws/out/../deps/uv/src/threadpool.c:122:5
+  16: <unknown>
+  17: <unknown>
+
+{
+  "stack": "             at /home/iojs/build/ws/out/../deps/uv/src/threadpool.c:122:5",
+  "id": "/dev-server/src/data/criteria.ts",
+  "message": "  x Expected '>', got 'className'\n    ,-[/dev-server/src/data/criteria.ts:10:1]\n  7 |     id: \"creativity\",\n  8 |     title: \"Creativity and Ingenuity\",\n  9 |     description: \"Evaluates the originality of ideas and standout features that differentiate the project.\",\n 10 |     icon: <Sparkles className=\"h-5 w-5 text-hackathon-purple\" />,\n    :                     ^^^^^^^^^\n 11 |     checkpoints: [\n 12 |       \"Original concept that addresses a unique problem or need\",\n 13 |       \"Innovative approach to solving the problem\",\n    `----\n\n\nCaused by:\n    Syntax Error\n\nStack backtrace:\n   0: <unknown>\n   1: <unknown>\n   2: <unknown>\n   3: <unknown>\n   4: <unknown>\n   5: <unknown>\n   6: <unknown>\n   7: <unknown>\n   8: <unknown>\n   9: <unknown>\n  10: <unknown>\n  11: <unknown>\n  12: <unknown>\n  13: <unknown>\n  14: _ZZN4node14ThreadPoolWork12ScheduleWorkEvENUlP9uv_work_sE_4_FUNES2_\n  15: worker\n             at /home/iojs/build/ws/out/../deps/uv/src/threadpool.c:122:5\n  16: <unknown>\n  17: <unknown>",
+  "pluginCode": "\nimport { Criteria } from '@/types/criteria';\nimport { Sparkles, Code, FileText, Globe, Users, Laptop } from 'lucide-react';\n\nexport const evaluationCriteria: Criteria[] = [\n  {\n    id: \"creativity\",\n    title: \"Creativity and Ingenuity\",\n    description: \"Evaluates the originality of ideas and standout features that differentiate the project.\",\n    icon: <Sparkles className=\"h-5 w-5 text-hackathon-purple\" />,\n    checkpoints: [\n      \"Original concept that addresses a unique problem or need\",\n      \"Innovative approach to solving the problem\",\n      \"Creative use of available technologies\",\n      \"Memorable and distinct user experience\"\n    ]\n  },\n  {\n    id: \"code-quality\",\n    title: \"Code Quality\",\n    description: \"Assesses the cleanliness, readability, and efficiency of the codebase.\",\n    icon: <Code className=\"h-5 w-5 text-hackathon-blue\" />,\n    checkpoints: [\n      \"Well-structured and organized code\",\n      \"Appropriate naming conventions and commenting\",\n      \"Efficient algorithms and performance optimizations\",\n      \"Proper error handling and edge case management\"\n    ]\n  },\n  {\n    id: \"documentation\",\n    title: \"Documentation\",\n    description: \"Evaluates the thoroughness and clarity of project documentation.\",\n    icon: <FileText className=\"h-5 w-5 text-hackathon-teal\" />,\n    checkpoints: [\n      \"Comprehensive README with clear setup instructions\",\n      \"Well-documented code with meaningful comments\",\n      \"Project structure explanation\",\n      \"Feature documentation and usage guidelines\"\n    ]\n  },\n  {\n    id: \"deployment\",\n    title: \"Deployment\",\n    description: \"Assesses the successful deployment and accessibility of the project.\",\n    icon: <Globe className=\"h-5 w-5 text-hackathon-pink\" />,\n    checkpoints: [\n      \"Successfully hosted on a platform (GitHub Pages, Netlify, etc.)\",\n      \"Properly configured domain and server settings\",\n      \"Cross-browser compatibility\",\n      \"Mobile responsiveness and accessibility\"\n    ]\n  },\n  {\n    id: \"dev-process\",\n    title: \"Development Process\",\n    description: \"Evaluates the effectiveness of collaboration and project management.\",\n    icon: <Users className=\"h-5 w-5 text-hackathon-purple\" />,\n    checkpoints: [\n      \"Consistent commit history showing progressive development\",\n      \"Proper use of version control (branches, PRs, etc.)\",\n      \"Evidence of effective collaboration among team members\",\n      \"Agile practices or other project management methodologies\"\n    ]\n  },\n  {\n    id: \"tech-stack\",\n    title: \"Technology Stack\",\n    description: \"Assesses the appropriate use of technologies and design elements.\",\n    icon: <Laptop className=\"h-5 w-5 text-hackathon-blue\" />,\n    checkpoints: [\n      \"Appropriate selection of technologies for project requirements\",\n      \"Responsive and visually appealing design\",\n      \"Effective integration of multiple technologies\",\n      \"Modern development practices and tools\"\n    ]\n  }\n];\n",
+  "error_type": "immediate_runtime",
+  "plugin": "vite:react-swc",
+  "frame": ""
+}
